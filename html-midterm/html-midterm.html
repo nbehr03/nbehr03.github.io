@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    
+    <!-- <html language="en"> -->   
+    <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error-Filled Page</title>
+</head>
+<body>
+    <h1>Welcome to My Error-Filled Page </h1>
+    
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
+    
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ol>
+
+    <p>This is another paragraph without proper indentation. </p>
+    
+    <img src="image.jpg" alt="meme">
+
+    <a href="https://www.example.com" target="_blank">Click me!</a>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25<td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr> </table>
+    
+    <img src="error.jpeg" alt="Error Image">
+
+    <p style="text-align:center">This is centered text.</p>
+
+    <p style="color:lightgray">Text</p>
+
+    <!-- <input type="button" value="Click me">  -->    <button type="button">Click me</button>
+
+    <!-- This is an unclosed comment -->
+
+    <a href="#">Link without closing tag</a>
+
+    <p><em>Underlined text</em></p>
+
+    <dl>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
+    </dl>
+
+    <ol>
+        <li>line 1- missing "!DOCTYPE html" tag at the top, fixed the error by adding it</li>
+        <li>line 4- html "language" attribute is in the head element. fixed it by commenting it out and adding "lang" element within the "html" opening tag</li>
+        <li>line 5- added "meta" tags to add default attributes to the webpage</li>
+        <li>line 7- missing "head" closing tag. fixed by adding it</li>
+        <li>line 9- "Welcome to My Error-Filled Page" missing closing header tag, fixed by adding closing "h1" tag</li>
+        <li>line 11- "This is a paragraph with mismatched tags and missing closing tags" is missing the opening tag, fixed by adding opening "p" tag</li>
+        <li>line 13-24: Opening "ol" and "ul" tags don't match. changed the closing "ul" tag to a closing "ol" tag</li>
+        <li>line 26- "This is another paragraph without proper indentation." is missing a closing tag. added a closing "p" tag</li>
+        <li>line 28- Image is missing alternate text. added "alt" attribute inside the "img" tag</li>
+        <li>line 30- "Click me!" is using "img" closing tag instead of "a" closing tag. Fixed it by changing it to "a" closing tag</li>
+        <li>lines 32-44: Table is missing closing tag. Fixed by adding "table" closing tag</li>
+        <li>line 46- in "img" tag, attribute "source" is wrong. fixed by changing it to "src"</li>
+        <li>line 48- "This is centered text" the "center" tag is obselete, and is no longer used in html. fixed by replacing the "center" tags with "p" tags, and adding "style="text-align:center"" within the opening "p" tag</li>
+        <li>line 50- "Text"- the attribute "bgcolor" cannot be used, fixed it by changing it to "style ="color:lightgray"" to make the text gray.</li>
+        <li>line 52- "Click me"- the button should be done using the button tag instead of the "input" tag. fixed by commenting out the old and put correct way next to it.</li>
+        <li>line 54- "This is an unclosed comment" was an unclosed comment. I fixed the error by closing the comment</li>
+        <li>line 56- "Link without closing tag" is missing a closing tag. I fixed the error by adding a closing tag</li>
+        <li>line 58- "Underlined text" has the inline tags in the wrong order. The inline "em" tags should be inside the p tags</li>
+        <li>line 61- "Descriptive Item Title" uses the "li" tag for an item title when it should use "dt" tag</li>
+        <li>line 62- "Descriptive Item Text" uses the "li" tag for an item text when it should use the "dd" tag</li>
+    </ol>
+
+</body>
+</html>
