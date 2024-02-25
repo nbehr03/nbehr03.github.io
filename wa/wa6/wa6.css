@@ -1,0 +1,77 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    /* background-image: url(rugby.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.backgroundimage
+{
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+
+.scoretitle
+{
+    background-color: crimson;
+    border: 3 solid black;
+    position: absolute;
+    top: 30px;
+    width: 350px;
+    height: 125px;
+    text-align: center;
+    padding: 10px;
+    left: 20px;
+    font-size: x-large;
+}
+
+
+.teamlogo1
+{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+.teamlogo2
+{
+    width: 115px;
+    height: auto;
+    position: absolute;
+    left: 235px;
+    top: 50px;
+}
+
+.score
+{
+    border: 3 solid crimson;
+    background-color: bisque;
+    position: absolute;
+    top: 100px;
+    width: 80px;
+    height: 27px;
+    text-align: center;
+    padding: 10px;
+    left: 148px;
+    font-size: x-large;
+
+}
+
+.channeltitle
+{
+    background-color: aliceblue;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 775px;
+    top: 50px;
+}
