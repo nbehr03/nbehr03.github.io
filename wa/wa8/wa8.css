@@ -1,0 +1,200 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(204, 221, 211);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(223, 239, 202);
+    transition: background-color 2s;
+}
+
+nav:hover
+{
+    background-color: rgb(204, 221, 211);
+}
+
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(101, 97, 118);
+    transition: color 1s;
+}
+
+nav a:hover
+{
+    color: rgb(204, 221, 211);
+}
+
+
+#red-ball{
+    background-color: rgb(90, 113, 106);
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+
+    animation-duration: 5s;
+    animation-name: ball;
+}
+
+h1
+{
+    color:rgb(101, 97, 118);
+    transition: color 2s;
+}
+
+h1:hover
+{
+    color: rgb(204, 221, 211);
+}
+
+#dog
+{
+    object-fit: contain;
+    animation-duration: 5s;
+    animation-name: dog;
+    width: 800px;
+}
+
+@keyframes dog {
+
+    0%
+    {
+        margin-left: 1000px;
+    }
+
+    10%
+    {
+        margin-top: 100px;
+    }
+
+    20%
+    {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    40%
+    {
+        margin-top: 300px;
+    }
+
+    50%
+    {
+        margin-top: 100px;
+
+    }
+
+    60%
+    {
+        margin-top: 300px;
+
+    }
+
+    70%
+    {
+        margin-top: 100px;
+    }
+    
+    80%
+    {
+        margin-left: 0px;
+    }
+
+    90%
+    {
+        margin-top: 500px;
+        margin-left: 200px;
+    }
+
+    100%
+    {
+        margin-left: 2000px;
+        margin-top: 0;
+    }
+    
+}
+
+@keyframes ball {
+
+    0%
+    {
+        height: 50px;
+    }
+
+    10%
+    {
+        margin-top: 300px;
+        height: 30px;
+    }
+
+    20%
+    {
+        margin-top: 0;
+        height: 50px;
+    }
+
+    30%
+    {
+        margin-left: 0px;
+        height: 50px;
+    }
+    
+    40%
+    {
+        margin-top: 900px;
+        height: 30px;
+    }
+
+    50%
+    {
+        margin-top: 100px;
+        height: 50px;
+
+    }
+
+    60%
+    {
+        margin-top: 900px;
+        height: 30px;
+
+    }
+
+    70%
+    {
+        margin-top: 150px;
+        height: 50px;
+
+    }
+
+    80%
+    {
+        margin-left: 150px;
+        height: 50px;
+    }
+
+    90%
+    {
+        margin-top: 900px;
+        margin-left: 200px;
+        height: 30px;
+    }
+
+    100%
+    {
+        margin-left: 2000px;
+        margin-top: 0;
+        height: 50px;
+    }
+    
+}
