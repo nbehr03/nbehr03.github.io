@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 10</title>
+
+    <style>
+        button
+        {
+            background-color: red;
+            width: 400px;
+            height: 300px;
+            font-size: 50px;
+        }
+
+        .click
+        {
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button type="button">do NOT click</button>
+
+    <button type="button" class="click">click me!</button>
+
+    <script>
+
+        const button = document.querySelector("button");
+        button.addEventListener('click', runFunction);
+
+        function runFunction()
+        {
+            button.textContent = `bruh`;
+        }
+
+        
+        const button2 = document.querySelector(".click");
+        button2.addEventListener('click', run2function);
+
+        const background = document.querySelector("background-color")
+
+        function run2function()
+        {
+            // alert('test successful')
+
+            // main.css('background-color', 'pink');
+
+            document.body.style.backgroundColor = 'pink';
+
+        }
+
+
+    </script>
+
+</body>
+</html>
