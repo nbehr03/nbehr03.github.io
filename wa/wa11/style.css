@@ -1,0 +1,53 @@
+h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: aliceblue;
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+  background-color: rgb(46, 24, 82);
+}
+
+img
+{
+  width: 640px;
+  height: 480px;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  border: 3px, solid, white;
+  background: rgb(217, 255, 0);
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  left: 8px;
+  width: 80px;
+  height: 30px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+  height: auto;
+}
