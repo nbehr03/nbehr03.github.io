@@ -13,32 +13,52 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//instead of generating a random color, this function assigns each ball a color between red and green, according to the volume the ball represents
-//the higher the volume, the greener the ball
-//the lower the volume, the redder the ball
+
+//generate color function!
+//on the page load, it randomly generates between 3 color schemes
+
+var num = random(1,3);
 
 function generateColor(i) 
 {
-    if (i === 0)
+    
+//instead of generating a random color, this function assigns each ball a color between red and green, according to the volume the ball represents
+//the higher the volume, the greener the ball
+//the lower the volume, the redder the ball
+    if (num === 1)
     {
-        return `rgb(255, 0, 0)`;
+        if (i === 0)
+        {
+            return `rgb(255, 0, 0)`;
+        }
+
+        if (i < 51)
+        {
+            return `rgb(255, ${i*5} ,0)`;
+        }
+
+        if (i > 50 && i < 100)
+        {
+            return `rgb(${255 - (5*(100-i))}, 255, 0)`;
+        }
+
+        if (i === 100)
+        {
+            return `rgb(0,255,0)`;
+        }
     }
 
-    if (i < 51)
+//this function returns a random color between red and purple, no green
+    if (num === 2)
     {
-        return `rgb(255, ${i*5} ,0)`;
+    return `rgb(${random(0, 255)},0,${random(0, 255)})`;
     }
 
-    if (i > 50 && i < 100)
+//this function will always have the r be 0, but random otherwise
+    if (num === 3)
     {
-        return `rgb(${255 - (5*(100-i))}, 255, 0)`;
+        return `rgb(0,${random(0, 255)},${random(0, 255)})`;
     }
-
-    if (i === 100)
-    {
-        return `rgb(0,255,0)`;
-    }
-
 }
 
 //generatePassword: the same as the function before, but it returns only the R value
@@ -167,10 +187,10 @@ while (balls.length < 101)
         //constructor(x,y, velX, velY, color, size)
         random(0 + size, width - size), // x position
         random(0 +size, height - size), // y position
-        random (-10,10), // x velocity
-        random(-10,10), // y velocity
+        random (-6,6), // x velocity
+        random(-6,6), // y velocity
         generateColor(i), //making each ball a color on the red/green gradient
-        18, // size 18
+        20, // size 20
         i, // assigning each ball a number
         generatePassword(i), //give a password for each ball
     );
